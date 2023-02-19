@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/oneMovie/oneMovie.css";
+
 const OneMovie = ({ id, keyId, name, description, genres, rate, length, img }) => {
   return (
     <article>

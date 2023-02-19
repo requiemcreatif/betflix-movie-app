@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "../../styles/movieDetail/movieDetails.css";
+import BackBtn from "../backButton/BackBtn";
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -19,6 +20,7 @@ const MovieDetail = () => {
 
   return (
     <section className="wrapper">
+      <BackBtn />
       <div className="movie-content">
         <div className="image-wrapper">
           <img src={img} alt={name} />

@@ -17,8 +17,8 @@ const MovieList = () => {
   return (
     <main>
       <div className="top-content">
-        <GenreFilter />
         <SearchInput />
+        <GenreFilter />
       </div>
 
       <section className="card-container">
