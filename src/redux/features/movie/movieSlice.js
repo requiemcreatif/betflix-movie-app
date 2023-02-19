@@ -19,6 +19,7 @@ const initialState = {
   movieItems: movieItems,
   isLoading: false,
   selectedGenre: null,
+  searchQuery: "",
 };
 
 const movieSlice = createSlice({
@@ -28,7 +29,10 @@ const movieSlice = createSlice({
     setSelectedGenre: (state, action) => {
       state.selectedGenre = action.payload;
     },
+    setSearchQuery: (state, action) => {
+      state.searchQuery = action.payload;
+    },
   },
 });
-export const { setSelectedGenre } = movieSlice.actions;
+export const { setSelectedGenre, setSearchQuery } = movieSlice.actions;
 export default movieSlice.reducer;
