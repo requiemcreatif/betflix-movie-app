@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 6rem;
 }
 .header-container .logo {
   font-size: 2.4rem;
@@ -29,4 +29,10 @@ header {
 .nav-link:hover {
   color: red;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 0 2rem;
+  }
 }/*# sourceMappingURL=navbar.css.map */
