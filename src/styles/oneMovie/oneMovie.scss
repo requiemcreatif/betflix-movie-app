@@ -33,8 +33,21 @@ a {
 
 .card-footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem;
   background-color: $primary-color;
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #ff0000;
+    }
+  }
 }
