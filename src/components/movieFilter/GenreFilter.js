@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedGenre, genres } from "../../redux/features/movie/movieSlice";
+import "../../styles/genreFilter/genreFilter.css";
 
 const GenreFilter = () => {
   const { selectedGenre } = useSelector((store) => store.movie);
@@ -13,7 +14,7 @@ const GenreFilter = () => {
 
   return (
     <div className="genre-filters">
-      <h2>Filter by Genre:</h2>
+      {/* <h2>Filter by Genre:</h2> */}
       <select value={selectedGenre || "all"} onChange={handleGenreSelect}>
         <option value="all">All Genres</option>
         {genres.map((genre) => (

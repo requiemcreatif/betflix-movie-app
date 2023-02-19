@@ -15,15 +15,18 @@ const MovieList = () => {
   );
 
   return (
-    <div>
-      <GenreFilter />
-      <SearchInput />
+    <main>
+      <div className="top-content">
+        <GenreFilter />
+        <SearchInput />
+      </div>
+
       <section className="card-container">
         {filteredMovies.map((movie) => (
           <OneMovie {...movie} key={movie.keyId} />
         ))}
       </section>
-    </div>
+    </main>
   );
 };
 

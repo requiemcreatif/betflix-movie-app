@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchQuery } from "../../redux/features/movie/movieSlice";
+import "../../styles/searchInput/searchInput.css";
 
 const SearchInput = () => {
   const { searchQuery } = useSelector((state) => state.movie);
